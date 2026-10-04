@@ -12,6 +12,8 @@ The deployable site is in the repository root. Enable **Settings → Pages → G
 
 The root contains only the sanitized static dataset and site assets. The private Timeline export and raw coordinate records are not included.
 
+The **Send us your data** page is a transparency-first local preparation tool. It never uploads a raw Timeline export. A participant can review the privacy-reduced file before choosing whether to share it through a future intake process.
+
 ## Local rebuild
 
 The analysis script is in `work/build_explorer.py`. It expects the source exports at the local paths used during analysis and writes the sanitized bundle to `outputs/miami-explorer/`. To refresh the static site locally:

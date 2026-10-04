@@ -1,14 +1,26 @@
 # Miami Arterial Evidence Explorer
 
-This is a static site. Upload the contents of `dist/` to any static host.
+Static GitHub Pages site for a student-led Miami-Dade traffic evidence project.
 
-The private Timeline export is not included. The published bundle contains only sanitized aggregate results, coarsened corridor geometry, county signal context, and methodology metadata.
+The site uses a sanitized bundle generated from one private Google Timeline export and supplied public/county transportation data. It highlights repeated sampled travel-time differences and adds signal, road, FDOT count, and county count-station context.
 
-To rebuild after changing the source export:
+The result is a screening tool. It does not measure countywide congestion, represent all drivers, identify a signal fault, or guarantee treatment benefits.
+
+## GitHub Pages
+
+The deployable site is in the repository root. Enable **Settings → Pages → GitHub Actions**. Pushing to `main` runs `.github/workflows/pages.yml` and publishes the page at the repository's GitHub Pages URL.
+
+The root contains only the sanitized static dataset and site assets. The private Timeline export and raw coordinate records are not included.
+
+The **Send us your data** page is a transparency-first local preparation tool. It never uploads a raw Timeline export. A participant can review the privacy-reduced file before choosing whether to share it through a future intake process.
+
+## Local rebuild
+
+The analysis script is in `work/build_explorer.py`. It expects the source exports at the local paths used during analysis and writes the sanitized bundle to `outputs/miami-explorer/`. To refresh the static site locally:
 
 ```powershell
 python work/build_explorer.py
-Copy-Item outputs/miami-explorer/* dist -Force
+Copy-Item -Path outputs/miami-explorer/* -Destination . -Force
 ```
 
-The current analysis uses repeated spatial cells from the Timeline export, matches corridor endpoints to the supplied TIGER/Line 2023 Miami-Dade road geometry, enriches those corridors with nearby county signal labels, and attaches matching FDOT TMS hourly count summaries where available. StreetNetwork and MajorRoads are used as inventory context. The dashboard calculates a conditional annual person-time value only when a supported GPS comparison and matched TMS volume both exist. The published geometry remains coarsened for privacy.
+Do not commit private source exports. Review `FINAL_READOUT.md` before presenting results to the county.

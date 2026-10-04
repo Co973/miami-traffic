@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Prepare data for sending · Miami Arterial Evidence Explorer</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar">
+      <div>
+        <div class="eyebrow">COMMUNITY DATA PILOT</div>
+        <h1>Send us your data</h1>
+        <p class="lede">Prepare a privacy-reduced trip file to help test whether a corridor pattern repeats across independent drivers.</p>
+      </div>
+      <div class="header-meta"><a class="back-link" href="index.html">← Back to explorer</a></div>
+    </header>
+
+    <section class="card send-card">
+      <div class="kicker">HOW THIS WORKS</div>
+      <h2>Your file is filtered in this browser first</h2>
+      <p>The page does not upload your Timeline file. It reads the file locally, keeps vehicle observations with reasonable accuracy, removes unrelated records, trims journey endpoints, rounds coordinates and times, and creates a new file for you to review. You decide whether to send that prepared file later.</p>
+      <div class="privacy-list">
+        <div class="privacy-item"><strong>Removed:</strong><br>Wi-Fi scans, place visits, profile fields, and unrelated activity.</div>
+        <div class="privacy-item"><strong>Filtered:</strong><br>Low-accuracy points, duplicate timestamps, long gaps, and impossible jumps.</div>
+        <div class="privacy-item"><strong>Coarsened:</strong><br>Coordinates are rounded to about 100 metres and times to 15-minute buckets.</div>
+        <div class="privacy-item"><strong>Excluded:</strong><br>The first and last points of each usable run are removed to reduce endpoint exposure.</div>
+      </div>
+      <label class="consent"><input id="consent" type="checkbox"> <span>I understand this creates a reduced location file for voluntary research sharing. I will review the downloaded file before sending it.</span></label>
+      <div class="file-row"><input id="timeline" type="file" accept="application/json,.json"><button id="prepare" class="primary" disabled>Prepare data for sending</button></div>
+      <div id="result" class="prepare-result" hidden></div>
+      <p class="small">There is no automatic upload endpoint in this version. This deliberate pause lets the project publish its filtering rules before collecting community data.</p>
+    </section>
+  </main>
+  <script src="prepare.js"></script>
+</body>
+</html>
