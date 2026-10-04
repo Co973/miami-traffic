@@ -5,7 +5,6 @@ const button = $('#prepare');
 const uploadButton = $('#upload');
 const result = $('#result');
 const prepareState = { file: null, prepared: null };
-const UPLOAD_ENDPOINT = window.COMMUNITY_UPLOAD_ENDPOINT || '';
 consent.addEventListener('change', () => { button.disabled = !(consent.checked && prepareState.file); });
 fileInput.addEventListener('change', () => { prepareState.file = fileInput.files?.[0] || null; button.disabled = !(consent.checked && prepareState.file); });
 
@@ -72,9 +71,12 @@ button.addEventListener('click', async () => {
   button.disabled = !(consent.checked && prepareState.file);
 });
 
-uploadButton.addEventListener('click', async () => {
-  if (!UPLOAD_ENDPOINT || !prepareState.prepared) { result.hidden = false; result.textContent = 'The upload endpoint is not configured yet. You can still download and review the prepared file.'; return; }
-  uploadButton.disabled = true; result.hidden = false; result.textContent = 'Uploading the prepared file…';
-  try { const response = await fetch(UPLOAD_ENDPOINT, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: prepareState.prepared }); if (!response.ok) throw new Error(`Server returned ${response.status}`); result.textContent = 'Uploaded successfully. The raw Timeline file was never sent.'; } catch (error) { result.textContent = `Upload failed: ${error.message}. Your prepared file is still available locally.`; } finally { uploadButton.disabled = !prepareState.prepared; }
+uploadButton.addEventListener('click', () => {
+  if (!prepareState.prepared) return;
+  const blob = new Blob([prepareState.prepared], { type: 'application/json' });
+  const download = document.createElement('a'); download.href = URL.createObjectURL(blob); download.download = 'miami-community-trip-data-prepared.json'; download.click(); URL.revokeObjectURL(download.href);
+  const subject = encodeURIComponent('Miami community trip data');
+  const body = encodeURIComponent('I prepared the attached file using the Miami Arterial Evidence Explorer. I understand it contains coarsened trip observations for voluntary research sharing.');
+  window.location.href = `mailto:surren83@gmail.com?subject=${subject}&body=${body}`;
+  result.hidden = false; result.textContent = 'The prepared file was downloaded and an email draft was opened. Attach the file before sending.';
 });
-

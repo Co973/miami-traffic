@@ -14,7 +14,7 @@ The root contains only the sanitized static dataset and site assets. The private
 
 The **Send us your data** page is a transparency-first local preparation tool. It never uploads a raw Timeline export. A participant can review the privacy-reduced file before choosing whether to share it through a future intake process.
 
-The automatic-upload contract is in `worker/`. GitHub Pages is the public front end; the optional private Cloudflare Worker and D1 database receive only the prepared schema. Set the deployed Worker URL in `config.js` before enabling collection.
+The Send us your data page uses a manual email handoff. It prepares the reduced JSON locally, downloads it, and opens an email draft addressed to the project. The participant must attach the file and press Send.
 
 ## Local rebuild
 
