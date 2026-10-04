@@ -1,0 +1,19 @@
+{
+  "defaults": {
+    "accuracy_max_m": 50,
+    "max_gap_s": 120,
+    "max_jump_mps": 55,
+    "activity_confidence": 0.8,
+    "grid_cell_deg": 0.0045
+  },
+  "formulas": {
+    "comparison": "median(peak duration) - median(midday duration)",
+    "scenario_savings": "observed_difference_seconds * assumed_fraction"
+  },
+  "limitations": [
+    "Corridors are discovered from repeated spatial cells, not yet matched to public road names.",
+    "The source is one driver\u2019s history and is not a vehicle count.",
+    "Observed peak\u2013midday differences are descriptive and are not proven removable delay.",
+    "No signal phases, queues, or annual BCR are inferred."
+  ]
+}

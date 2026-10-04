@@ -1,0 +1,753 @@
+{
+  "corridors": [
+    {
+      "id": "C01",
+      "label": "Observed corridor 1",
+      "status": "supported",
+      "sample_count": 6,
+      "day_count": 4,
+      "median_seconds": 243.5,
+      "q25_seconds": 192.0,
+      "q75_seconds": 305.0,
+      "comparison": {
+        "peak": "AM",
+        "peak_n": 3,
+        "midday_n": 3,
+        "difference_seconds": 113.0
+      },
+      "days": [
+        "2026-09-09",
+        "2026-09-16",
+        "2026-09-19",
+        "2026-09-21"
+      ],
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -80.3186195,
+            25.6824339
+          ],
+          [
+            -80.3184071,
+            25.6825636
+          ]
+        ]
+      },
+      "note": "Screening grid derived from personal GPS history; road name and signal attribution require public geography matching."
+    },
+    {
+      "id": "C02",
+      "label": "Observed corridor 2",
+      "status": "supported",
+      "sample_count": 4,
+      "day_count": 4,
+      "median_seconds": 133.5,
+      "q25_seconds": 113.0,
+      "q75_seconds": 154.0,
+      "comparison": {
+        "peak": "AM",
+        "peak_n": 2,
+        "midday_n": 2,
+        "difference_seconds": 48.5
+      },
+      "days": [
+        "2026-09-08",
+        "2026-09-12",
+        "2026-09-15",
+        "2026-09-24"
+      ],
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -80.3192017,
+            25.6846618
+          ],
+          [
+            -80.3193061,
+            25.6873206
+          ]
+        ]
+      },
+      "note": "Screening grid derived from personal GPS history; road name and signal attribution require public geography matching."
+    },
+    {
+      "id": "C03",
+      "label": "Observed corridor 3",
+      "status": "exploratory",
+      "sample_count": 6,
+      "day_count": 6,
+      "median_seconds": 147.0,
+      "q25_seconds": 126.0,
+      "q75_seconds": 168.0,
+      "comparison": null,
+      "days": [
+        "2026-09-08",
+        "2026-09-10",
+        "2026-09-15",
+        "2026-09-16",
+        "2026-09-22",
+        "2026-09-23"
+      ],
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -80.3180376,
+            25.7246853
+          ],
+          [
+            -80.3180602,
+            25.7266136
+          ]
+        ]
+      },
+      "note": "Screening grid derived from personal GPS history; road name and signal attribution require public geography matching."
+    },
+    {
+      "id": "C04",
+      "label": "Observed corridor 4",
+      "status": "exploratory",
+      "sample_count": 6,
+      "day_count": 6,
+      "median_seconds": 203.5,
+      "q25_seconds": 154.0,
+      "q75_seconds": 280.0,
+      "comparison": null,
+      "days": [
+        "2026-09-08",
+        "2026-09-09",
+        "2026-09-15",
+        "2026-09-17",
+        "2026-09-18",
+        "2026-09-22"
+      ],
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -80.3333539,
+            25.7621264
+          ],
+          [
+            -80.3335214,
+            25.7621238
+          ]
+        ]
+      },
+      "note": "Screening grid derived from personal GPS history; road name and signal attribution require public geography matching."
+    },
+    {
+      "id": "C05",
+      "label": "Observed corridor 5",
+      "status": "exploratory",
+      "sample_count": 5,
+      "day_count": 5,
+      "median_seconds": 126.0,
+      "q25_seconds": 126.0,
+      "q75_seconds": 126.0,
+      "comparison": null,
+      "days": [
+        "2026-09-08",
+        "2026-09-10",
+        "2026-09-17",
+        "2026-09-22",
+        "2026-09-23"
+      ],
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -80.3183432,
+            25.7335957
+          ],
+          [
+            -80.3184283,
+            25.7343711
+          ]
+        ]
+      },
+      "note": "Screening grid derived from personal GPS history; road name and signal attribution require public geography matching."
+    },
+    {
+      "id": "C06",
+      "label": "Observed corridor 6",
+      "status": "exploratory",
+      "sample_count": 5,
+      "day_count": 5,
+      "median_seconds": 126.0,
+      "q25_seconds": 126.0,
+      "q75_seconds": 168.0,
+      "comparison": null,
+      "days": [
+        "2026-09-08",
+        "2026-09-15",
+        "2026-09-17",
+        "2026-09-18",
+        "2026-09-23"
+      ],
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -80.3339529,
+            25.7549534
+          ],
+          [
+            -80.3360919,
+            25.754892
+          ]
+        ]
+      },
+      "note": "Screening grid derived from personal GPS history; road name and signal attribution require public geography matching."
+    },
+    {
+      "id": "C07",
+      "label": "Observed corridor 7",
+      "status": "exploratory",
+      "sample_count": 5,
+      "day_count": 5,
+      "median_seconds": 392.0,
+      "q25_seconds": 392.0,
+      "q75_seconds": 406.0,
+      "comparison": null,
+      "days": [
+        "2026-09-09",
+        "2026-09-10",
+        "2026-09-18",
+        "2026-09-22",
+        "2026-09-23"
+      ],
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -80.3763583,
+            25.759766
+          ],
+          [
+            -80.3724631,
+            25.7600068
+          ]
+        ]
+      },
+      "note": "Screening grid derived from personal GPS history; road name and signal attribution require public geography matching."
+    },
+    {
+      "id": "C08",
+      "label": "Observed corridor 8",
+      "status": "exploratory",
+      "sample_count": 5,
+      "day_count": 4,
+      "median_seconds": 127.0,
+      "q25_seconds": 116.0,
+      "q75_seconds": 154.0,
+      "comparison": null,
+      "days": [
+        "2026-09-08",
+        "2026-09-15",
+        "2026-09-17",
+        "2026-09-23"
+      ],
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -80.3427337,
+            25.7547025
+          ],
+          [
+            -80.3441379,
+            25.7546608
+          ]
+        ]
+      },
+      "note": "Screening grid derived from personal GPS history; road name and signal attribution require public geography matching."
+    },
+    {
+      "id": "C09",
+      "label": "Observed corridor 9",
+      "status": "exploratory",
+      "sample_count": 4,
+      "day_count": 4,
+      "median_seconds": 212.0,
+      "q25_seconds": 158.0,
+      "q75_seconds": 266.0,
+      "comparison": null,
+      "days": [
+        "2026-09-09",
+        "2026-09-15",
+        "2026-09-16",
+        "2026-09-17"
+      ],
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -80.3269218,
+            25.7587806
+          ],
+          [
+            -80.3248904,
+            25.7588318
+          ]
+        ]
+      },
+      "note": "Screening grid derived from personal GPS history; road name and signal attribution require public geography matching."
+    },
+    {
+      "id": "C10",
+      "label": "Observed corridor 10",
+      "status": "exploratory",
+      "sample_count": 4,
+      "day_count": 4,
+      "median_seconds": 126.0,
+      "q25_seconds": 126.0,
+      "q75_seconds": 126.0,
+      "comparison": null,
+      "days": [
+        "2026-09-09",
+        "2026-09-10",
+        "2026-09-15",
+        "2026-09-23"
+      ],
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -80.3428486,
+            25.7619256
+          ],
+          [
+            -80.3419701,
+            25.7619377
+          ]
+        ]
+      },
+      "note": "Screening grid derived from personal GPS history; road name and signal attribution require public geography matching."
+    },
+    {
+      "id": "C11",
+      "label": "Observed corridor 11",
+      "status": "exploratory",
+      "sample_count": 3,
+      "day_count": 3,
+      "median_seconds": 280.0,
+      "q25_seconds": 182.0,
+      "q75_seconds": 372.0,
+      "comparison": null,
+      "days": [
+        "2026-09-10",
+        "2026-09-17",
+        "2026-09-22"
+      ],
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -80.3185866,
+            25.682856
+          ],
+          [
+            -80.3190089,
+            25.6824044
+          ]
+        ]
+      },
+      "note": "Screening grid derived from personal GPS history; road name and signal attribution require public geography matching."
+    },
+    {
+      "id": "C12",
+      "label": "Observed corridor 12",
+      "status": "exploratory",
+      "sample_count": 3,
+      "day_count": 3,
+      "median_seconds": 210.0,
+      "q25_seconds": 196.0,
+      "q75_seconds": 309.0,
+      "comparison": null,
+      "days": [
+        "2026-09-12",
+        "2026-09-17",
+        "2026-09-18"
+      ],
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -80.318422,
+            25.7472844
+          ],
+          [
+            -80.3189647,
+            25.7467627
+          ]
+        ]
+      },
+      "note": "Screening grid derived from personal GPS history; road name and signal attribution require public geography matching."
+    }
+  ],
+  "traversals": [
+    {
+      "corridor_id": "C01",
+      "duration_seconds": 252.0,
+      "month": "2026-09",
+      "window": "AM"
+    },
+    {
+      "corridor_id": "C01",
+      "duration_seconds": 147.0,
+      "month": "2026-09",
+      "window": "Midday"
+    },
+    {
+      "corridor_id": "C01",
+      "duration_seconds": 305.0,
+      "month": "2026-09",
+      "window": "AM"
+    },
+    {
+      "corridor_id": "C01",
+      "duration_seconds": 192.0,
+      "month": "2026-09",
+      "window": "Midday"
+    },
+    {
+      "corridor_id": "C01",
+      "duration_seconds": 235.0,
+      "month": "2026-09",
+      "window": "Midday"
+    },
+    {
+      "corridor_id": "C01",
+      "duration_seconds": 462.0,
+      "month": "2026-09",
+      "window": "AM"
+    },
+    {
+      "corridor_id": "C02",
+      "duration_seconds": 154.0,
+      "month": "2026-09",
+      "window": "AM"
+    },
+    {
+      "corridor_id": "C02",
+      "duration_seconds": 113.0,
+      "month": "2026-09",
+      "window": "Midday"
+    },
+    {
+      "corridor_id": "C02",
+      "duration_seconds": 168.0,
+      "month": "2026-09",
+      "window": "AM"
+    },
+    {
+      "corridor_id": "C02",
+      "duration_seconds": 112.0,
+      "month": "2026-09",
+      "window": "Midday"
+    },
+    {
+      "corridor_id": "C03",
+      "duration_seconds": 126.0,
+      "month": "2026-09",
+      "window": "AM"
+    },
+    {
+      "corridor_id": "C03",
+      "duration_seconds": 126.0,
+      "month": "2026-09",
+      "window": "AM"
+    },
+    {
+      "corridor_id": "C03",
+      "duration_seconds": 210.0,
+      "month": "2026-09",
+      "window": "AM"
+    },
+    {
+      "corridor_id": "C03",
+      "duration_seconds": 126.0,
+      "month": "2026-09",
+      "window": "AM"
+    },
+    {
+      "corridor_id": "C03",
+      "duration_seconds": 168.0,
+      "month": "2026-09",
+      "window": "AM"
+    },
+    {
+      "corridor_id": "C03",
+      "duration_seconds": 168.0,
+      "month": "2026-09",
+      "window": "AM"
+    },
+    {
+      "corridor_id": "C04",
+      "duration_seconds": 280.0,
+      "month": "2026-09",
+      "window": "AM"
+    },
+    {
+      "corridor_id": "C04",
+      "duration_seconds": 239.0,
+      "month": "2026-09",
+      "window": "AM"
+    },
+    {
+      "corridor_id": "C04",
+      "duration_seconds": 168.0,
+      "month": "2026-09",
+      "window": "AM"
+    },
+    {
+      "corridor_id": "C04",
+      "duration_seconds": 294.0,
+      "month": "2026-09",
+      "window": "AM"
+    },
+    {
+      "corridor_id": "C04",
+      "duration_seconds": 154.0,
+      "month": "2026-09",
+      "window": "AM"
+    },
+    {
+      "corridor_id": "C04",
+      "duration_seconds": 154.0,
+      "month": "2026-09",
+      "window": "AM"
+    },
+    {
+      "corridor_id": "C05",
+      "duration_seconds": 126.0,
+      "month": "2026-09",
+      "window": "AM"
+    },
+    {
+      "corridor_id": "C05",
+      "duration_seconds": 126.0,
+      "month": "2026-09",
+      "window": "AM"
+    },
+    {
+      "corridor_id": "C05",
+      "duration_seconds": 126.0,
+      "month": "2026-09",
+      "window": "AM"
+    },
+    {
+      "corridor_id": "C05",
+      "duration_seconds": 168.0,
+      "month": "2026-09",
+      "window": "AM"
+    },
+    {
+      "corridor_id": "C05",
+      "duration_seconds": 126.0,
+      "month": "2026-09",
+      "window": "AM"
+    },
+    {
+      "corridor_id": "C06",
+      "duration_seconds": 126.0,
+      "month": "2026-09",
+      "window": "AM"
+    },
+    {
+      "corridor_id": "C06",
+      "duration_seconds": 168.0,
+      "month": "2026-09",
+      "window": "AM"
+    },
+    {
+      "corridor_id": "C06",
+      "duration_seconds": 168.0,
+      "month": "2026-09",
+      "window": "AM"
+    },
+    {
+      "corridor_id": "C06",
+      "duration_seconds": 126.0,
+      "month": "2026-09",
+      "window": "AM"
+    },
+    {
+      "corridor_id": "C06",
+      "duration_seconds": 112.0,
+      "month": "2026-09",
+      "window": "AM"
+    },
+    {
+      "corridor_id": "C07",
+      "duration_seconds": 238.0,
+      "month": "2026-09",
+      "window": "AM"
+    },
+    {
+      "corridor_id": "C07",
+      "duration_seconds": 392.0,
+      "month": "2026-09",
+      "window": "AM"
+    },
+    {
+      "corridor_id": "C07",
+      "duration_seconds": 406.0,
+      "month": "2026-09",
+      "window": "AM"
+    },
+    {
+      "corridor_id": "C07",
+      "duration_seconds": 546.0,
+      "month": "2026-09",
+      "window": "AM"
+    },
+    {
+      "corridor_id": "C07",
+      "duration_seconds": 392.0,
+      "month": "2026-09",
+      "window": "AM"
+    },
+    {
+      "corridor_id": "C08",
+      "duration_seconds": 154.0,
+      "month": "2026-09",
+      "window": "AM"
+    },
+    {
+      "corridor_id": "C08",
+      "duration_seconds": 127.0,
+      "month": "2026-09",
+      "window": "AM"
+    },
+    {
+      "corridor_id": "C08",
+      "duration_seconds": 113.0,
+      "month": "2026-09",
+      "window": "AM"
+    },
+    {
+      "corridor_id": "C08",
+      "duration_seconds": 154.0,
+      "month": "2026-09",
+      "window": "PM"
+    },
+    {
+      "corridor_id": "C08",
+      "duration_seconds": 116.0,
+      "month": "2026-09",
+      "window": "AM"
+    },
+    {
+      "corridor_id": "C09",
+      "duration_seconds": 280.0,
+      "month": "2026-09",
+      "window": "AM"
+    },
+    {
+      "corridor_id": "C09",
+      "duration_seconds": 158.0,
+      "month": "2026-09",
+      "window": "AM"
+    },
+    {
+      "corridor_id": "C09",
+      "duration_seconds": 154.0,
+      "month": "2026-09",
+      "window": "AM"
+    },
+    {
+      "corridor_id": "C09",
+      "duration_seconds": 266.0,
+      "month": "2026-09",
+      "window": "AM"
+    },
+    {
+      "corridor_id": "C10",
+      "duration_seconds": 126.0,
+      "month": "2026-09",
+      "window": "AM"
+    },
+    {
+      "corridor_id": "C10",
+      "duration_seconds": 120.0,
+      "month": "2026-09",
+      "window": "AM"
+    },
+    {
+      "corridor_id": "C10",
+      "duration_seconds": 126.0,
+      "month": "2026-09",
+      "window": "AM"
+    },
+    {
+      "corridor_id": "C10",
+      "duration_seconds": 155.0,
+      "month": "2026-09",
+      "window": "AM"
+    },
+    {
+      "corridor_id": "C11",
+      "duration_seconds": 372.0,
+      "month": "2026-09",
+      "window": "AM"
+    },
+    {
+      "corridor_id": "C11",
+      "duration_seconds": 182.0,
+      "month": "2026-09",
+      "window": "AM"
+    },
+    {
+      "corridor_id": "C11",
+      "duration_seconds": 280.0,
+      "month": "2026-09",
+      "window": "AM"
+    },
+    {
+      "corridor_id": "C12",
+      "duration_seconds": 210.0,
+      "month": "2026-09",
+      "window": "Midday"
+    },
+    {
+      "corridor_id": "C12",
+      "duration_seconds": 309.0,
+      "month": "2026-09",
+      "window": "PM"
+    },
+    {
+      "corridor_id": "C12",
+      "duration_seconds": 196.0,
+      "month": "2026-09",
+      "window": "PM"
+    }
+  ],
+  "quality_summary": {
+    "input_sha256": "9ae61afaecb98f8c91060be09e6a7fc1d5615ec51645f968ff988e181f3b8a5d",
+    "semantic_segments": 1098,
+    "raw_signals": 66834,
+    "positions": 14485,
+    "vehicle_activities": 176,
+    "qualified_runs": 42,
+    "candidate_corridors": 40,
+    "published_corridors": 12,
+    "rejections": {
+      "too_few_positions": 123,
+      "low_activity_confidence": 11
+    },
+    "analysis_period": {
+      "start": "2026-09-04T18:54:21+00:00",
+      "end": "2026-10-04T18:47:08+00:00"
+    }
+  },
+  "limitations": [
+    "Corridors are discovered from repeated spatial cells, not yet matched to public road names.",
+    "The source is one driver\u2019s history and is not a vehicle count.",
+    "Observed peak\u2013midday differences are descriptive and are not proven removable delay.",
+    "No signal phases, queues, or annual BCR are inferred."
+  ]
+}
