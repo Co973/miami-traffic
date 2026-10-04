@@ -31,7 +31,53 @@
           ]
         ]
       },
-      "note": "Screening grid derived from personal GPS history; road name and signal attribution require public geography matching."
+      "note": "Screening grid derived from personal GPS history. Signal labels, road names, TMS counts, and county count-station context are matched from supplied exports.",
+      "location_label": "SW 77th Ave \u00b7 between SW 77 Av & SW 98 St and S Dade Bswy & SW 98 St",
+      "road_match": {
+        "name": "SW 77th Ave",
+        "mtfcc": "S1400",
+        "endpoint_matches": [
+          {
+            "name": "SW 77th Ave",
+            "mtfcc": "S1400",
+            "distance_m": 11
+          },
+          {
+            "name": "Unnamed road",
+            "mtfcc": "S1780",
+            "distance_m": 26
+          }
+        ]
+      },
+      "nearby_signals": [
+        {
+          "intersection": "SW 77 Av & SW 98 St",
+          "distance_m": 280
+        },
+        {
+          "intersection": "S Dade Bswy & SW 98 St",
+          "distance_m": 302
+        },
+        {
+          "intersection": "US-1 & SW 98 St",
+          "distance_m": 341
+        }
+      ],
+      "road_context": {
+        "signal_matches": 6,
+        "road_inventory_rows": 116397,
+        "major_road_name_count": 825,
+        "status": "TIGER line geometry matched at corridor endpoints"
+      },
+      "tms_context": {
+        "matched_sites": [],
+        "status": "no TMS count site matched to this road name"
+      },
+      "count_station_context": {
+        "matched_stations": [],
+        "status": "no nearby AADT station matched by road name",
+        "use": "annual average daily traffic context only; not a directional peak-window volume"
+      }
     },
     {
       "id": "C02",
@@ -64,7 +110,53 @@
           ]
         ]
       },
-      "note": "Screening grid derived from personal GPS history; road name and signal attribution require public geography matching."
+      "note": "Screening grid derived from personal GPS history. Signal labels, road names, TMS counts, and county count-station context are matched from supplied exports.",
+      "location_label": "SW 77th Ave \u00b7 between Datran Dr & S Dadeland Blvd and Kendall Dr & SW 77 Av",
+      "road_match": {
+        "name": "SW 77th Ave",
+        "mtfcc": "S1400",
+        "endpoint_matches": [
+          {
+            "name": "Unnamed road",
+            "mtfcc": "S1780",
+            "distance_m": 24
+          },
+          {
+            "name": "SW 77th Ave",
+            "mtfcc": "S1400",
+            "distance_m": 34
+          }
+        ]
+      },
+      "nearby_signals": [
+        {
+          "intersection": "Datran Dr & S Dadeland Blvd",
+          "distance_m": 377
+        },
+        {
+          "intersection": "Kendall Dr & SW 77 Av",
+          "distance_m": 379
+        },
+        {
+          "intersection": "Kendall Dr @ SW 7600 Blk",
+          "distance_m": 183
+        }
+      ],
+      "road_context": {
+        "signal_matches": 3,
+        "road_inventory_rows": 116397,
+        "major_road_name_count": 825,
+        "status": "TIGER line geometry matched at corridor endpoints"
+      },
+      "tms_context": {
+        "matched_sites": [],
+        "status": "no TMS count site matched to this road name"
+      },
+      "count_station_context": {
+        "matched_stations": [],
+        "status": "no nearby AADT station matched by road name",
+        "use": "annual average daily traffic context only; not a directional peak-window volume"
+      }
     },
     {
       "id": "C03",
@@ -92,7 +184,95 @@
           ]
         ]
       },
-      "note": "Screening grid derived from personal GPS history; road name and signal attribution require public geography matching."
+      "note": "Screening grid derived from personal GPS history. Signal labels, road names, TMS counts, and county count-station context are matched from supplied exports.",
+      "location_label": "Palmetto Expy \u00b7 between Bird Rd & SR 826 NB and Bird Rd & SR 826 W",
+      "road_match": {
+        "name": "Palmetto Expy",
+        "mtfcc": "S1100",
+        "endpoint_matches": [
+          {
+            "name": "Palmetto Expy",
+            "mtfcc": "S1100",
+            "distance_m": 3
+          },
+          {
+            "name": "Palmetto Expy",
+            "mtfcc": "S1100",
+            "distance_m": 5
+          }
+        ]
+      },
+      "nearby_signals": [
+        {
+          "intersection": "Bird Rd & SR 826 NB",
+          "distance_m": 669
+        },
+        {
+          "intersection": "Bird Rd & SR 826 W",
+          "distance_m": 671
+        },
+        {
+          "intersection": "4374 Bird Rd & SW 74 Ct & SW 75 Av",
+          "distance_m": 700
+        }
+      ],
+      "road_context": {
+        "signal_matches": 3,
+        "road_inventory_rows": 116397,
+        "major_road_name_count": 825,
+        "status": "TIGER line geometry matched at corridor endpoints"
+      },
+      "tms_context": {
+        "matched_sites": [
+          {
+            "name": "PALMETTO EXPWY",
+            "site": "0137",
+            "cosite": "870137",
+            "direction": "W",
+            "rows": 177,
+            "date_start": "2025-10-03",
+            "date_end": "2026-10-02",
+            "days": 177,
+            "median_total_volume": 75445.0,
+            "median_peak_volume": 4808.0,
+            "lat": 25.92474,
+            "lon": -80.30269,
+            "peak_window": "AM/PM unavailable",
+            "peak_window_volume": 13139.0,
+            "midday_window_volume": 20303.0
+          },
+          {
+            "name": "PALMETTO EXPWY",
+            "site": "0137",
+            "cosite": "870137",
+            "direction": "E",
+            "rows": 168,
+            "date_start": "2025-10-03",
+            "date_end": "2026-10-02",
+            "days": 168,
+            "median_total_volume": 70841.5,
+            "median_peak_volume": 4755.5,
+            "lat": 25.92474,
+            "lon": -80.30269,
+            "peak_window": "AM/PM unavailable",
+            "peak_window_volume": 12330.0,
+            "midday_window_volume": 19230.5
+          }
+        ],
+        "status": "matched TMS count data"
+      },
+      "count_station_context": {
+        "matched_stations": [
+          {
+            "station": "9122",
+            "address": "SW 24 STREET WEST OF PALMETTO EXPRESSWAY",
+            "aadt2019": 59630.0,
+            "distance_m": 2555
+          }
+        ],
+        "status": "matched 2019 AADT station context",
+        "use": "annual average daily traffic context only; not a directional peak-window volume"
+      }
     },
     {
       "id": "C04",
@@ -120,7 +300,113 @@
           ]
         ]
       },
-      "note": "Screening grid derived from personal GPS history; road name and signal attribution require public geography matching."
+      "note": "Screening grid derived from personal GPS history. Signal labels, road names, TMS counts, and county count-station context are matched from supplied exports.",
+      "location_label": "SW 8th St \u00b7 between Galloway Rd & SW 8 St and SW 82 Av & SW 8 St",
+      "road_match": {
+        "name": "SW 8th St",
+        "mtfcc": "S1200",
+        "endpoint_matches": [
+          {
+            "name": "SW 8th St",
+            "mtfcc": "S1200",
+            "distance_m": 5
+          },
+          {
+            "name": "SW 8th St",
+            "mtfcc": "S1200",
+            "distance_m": 3
+          }
+        ]
+      },
+      "nearby_signals": [
+        {
+          "intersection": "Galloway Rd & SW 8 St",
+          "distance_m": 318
+        },
+        {
+          "intersection": "SW 82 Av & SW 8 St",
+          "distance_m": 508
+        },
+        {
+          "intersection": "SW 8 St & SW 89 Av",
+          "distance_m": 619
+        }
+      ],
+      "road_context": {
+        "signal_matches": 3,
+        "road_inventory_rows": 116397,
+        "major_road_name_count": 825,
+        "status": "TIGER line geometry matched at corridor endpoints"
+      },
+      "tms_context": {
+        "matched_sites": [
+          {
+            "name": "TAMIAMI TRAIL/SW 8ST",
+            "site": "0383",
+            "cosite": "870383",
+            "direction": "W",
+            "rows": 282,
+            "date_start": "2025-10-03",
+            "date_end": "2026-09-05",
+            "days": 282,
+            "median_total_volume": 13540.0,
+            "median_peak_volume": 1163.5,
+            "lat": 25.7609,
+            "lon": -80.45461,
+            "peak_window": "AM/PM unavailable",
+            "peak_window_volume": 2029.5,
+            "midday_window_volume": 3403.0
+          },
+          {
+            "name": "TAMIAMI TRAIL/SW 8ST",
+            "site": "0383",
+            "cosite": "870383",
+            "direction": "E",
+            "rows": 282,
+            "date_start": "2025-10-03",
+            "date_end": "2026-09-05",
+            "days": 282,
+            "median_total_volume": 11838.5,
+            "median_peak_volume": 959.5,
+            "lat": 25.7609,
+            "lon": -80.45461,
+            "peak_window": "AM/PM unavailable",
+            "peak_window_volume": 2453.0,
+            "midday_window_volume": 3021.5
+          }
+        ],
+        "status": "matched TMS count data"
+      },
+      "count_station_context": {
+        "matched_stations": [
+          {
+            "station": "9694",
+            "address": "SW 82 AVENUE SOUTH OF SW 8 STREET",
+            "aadt2019": 8550.0,
+            "distance_m": 563
+          },
+          {
+            "station": "9698",
+            "address": "SW 97 AVENUE SOUTH OF SW 8 STREET",
+            "aadt2019": 17329.0,
+            "distance_m": 1895
+          },
+          {
+            "station": "9238",
+            "address": "SW 67 AVENUE/LUDLAM ROAD SOUTH OF SW 8 STREET",
+            "aadt2019": 18572.0,
+            "distance_m": 2969
+          },
+          {
+            "station": "9682",
+            "address": "SW 62 AVENUE SOUTH OF SW 8 STREET",
+            "aadt2019": 10547.0,
+            "distance_m": 3777
+          }
+        ],
+        "status": "matched 2019 AADT station context",
+        "use": "annual average daily traffic context only; not a directional peak-window volume"
+      }
     },
     {
       "id": "C05",
@@ -148,7 +434,53 @@
           ]
         ]
       },
-      "note": "Screening grid derived from personal GPS history; road name and signal attribution require public geography matching."
+      "note": "Screening grid derived from personal GPS history. Signal labels, road names, TMS counts, and county count-station context are matched from supplied exports.",
+      "location_label": "Between Bird Rd & SR 826 NB and Bird Rd & SR 826 W",
+      "road_match": {
+        "name": null,
+        "mtfcc": null,
+        "endpoint_matches": [
+          {
+            "name": "Unnamed road",
+            "mtfcc": "S1630",
+            "distance_m": 13
+          },
+          {
+            "name": "Unnamed road",
+            "mtfcc": "S1630",
+            "distance_m": 13
+          }
+        ]
+      },
+      "nearby_signals": [
+        {
+          "intersection": "Bird Rd & SR 826 NB",
+          "distance_m": 134
+        },
+        {
+          "intersection": "Bird Rd & SR 826 W",
+          "distance_m": 155
+        },
+        {
+          "intersection": "4374 Bird Rd & SW 74 Ct & SW 75 Av",
+          "distance_m": 225
+        }
+      ],
+      "road_context": {
+        "signal_matches": 3,
+        "road_inventory_rows": 116397,
+        "major_road_name_count": 825,
+        "status": "TIGER line geometry matched at corridor endpoints"
+      },
+      "tms_context": {
+        "matched_sites": [],
+        "status": "no TMS count site matched to this road name"
+      },
+      "count_station_context": {
+        "matched_stations": [],
+        "status": "no nearby AADT station matched by road name",
+        "use": "annual average daily traffic context only; not a directional peak-window volume"
+      }
     },
     {
       "id": "C06",
@@ -176,7 +508,53 @@
           ]
         ]
       },
-      "note": "Screening grid derived from personal GPS history; road name and signal attribution require public geography matching."
+      "note": "Screening grid derived from personal GPS history. Signal labels, road names, TMS counts, and county count-station context are matched from supplied exports.",
+      "location_label": "SW 16th St \u00b7 between SW 16 St @ SW 8400 Blk and Galloway Rd & SW 16 St",
+      "road_match": {
+        "name": "SW 16th St",
+        "mtfcc": "S1400",
+        "endpoint_matches": [
+          {
+            "name": "SW 16th St",
+            "mtfcc": "S1400",
+            "distance_m": 3
+          },
+          {
+            "name": "SW 87th Ave",
+            "mtfcc": "S1200",
+            "distance_m": 8
+          }
+        ]
+      },
+      "nearby_signals": [
+        {
+          "intersection": "SW 16 St @ SW 8400 Blk",
+          "distance_m": 156
+        },
+        {
+          "intersection": "Galloway Rd & SW 16 St",
+          "distance_m": 193
+        },
+        {
+          "intersection": "SW 16 St @ SW 8300 Blk",
+          "distance_m": 325
+        }
+      ],
+      "road_context": {
+        "signal_matches": 3,
+        "road_inventory_rows": 116397,
+        "major_road_name_count": 825,
+        "status": "TIGER line geometry matched at corridor endpoints"
+      },
+      "tms_context": {
+        "matched_sites": [],
+        "status": "no TMS count site matched to this road name"
+      },
+      "count_station_context": {
+        "matched_stations": [],
+        "status": "no nearby AADT station matched by road name",
+        "use": "annual average daily traffic context only; not a directional peak-window volume"
+      }
     },
     {
       "id": "C07",
@@ -204,7 +582,53 @@
           ]
         ]
       },
-      "note": "Screening grid derived from personal GPS history; road name and signal attribution require public geography matching."
+      "note": "Screening grid derived from personal GPS history. Signal labels, road names, TMS counts, and county count-station context are matched from supplied exports.",
+      "location_label": "SW 112th Ave \u00b7 between SW 112 Av & SW 8 St and SW 117 Av & SW 8 St",
+      "road_match": {
+        "name": "SW 112th Ave",
+        "mtfcc": "S1400",
+        "endpoint_matches": [
+          {
+            "name": "SW 112th Ave",
+            "mtfcc": "S1400",
+            "distance_m": 18
+          },
+          {
+            "name": "SW 109th Ave",
+            "mtfcc": "S1400",
+            "distance_m": 42
+          }
+        ]
+      },
+      "nearby_signals": [
+        {
+          "intersection": "SW 112 Av & SW 8 St",
+          "distance_m": 131
+        },
+        {
+          "intersection": "SW 117 Av & SW 8 St",
+          "distance_m": 268
+        },
+        {
+          "intersection": "SW 109 Av & SW 8 St",
+          "distance_m": 380
+        }
+      ],
+      "road_context": {
+        "signal_matches": 4,
+        "road_inventory_rows": 116397,
+        "major_road_name_count": 825,
+        "status": "TIGER line geometry matched at corridor endpoints"
+      },
+      "tms_context": {
+        "matched_sites": [],
+        "status": "no TMS count site matched to this road name"
+      },
+      "count_station_context": {
+        "matched_stations": [],
+        "status": "no nearby AADT station matched by road name",
+        "use": "annual average daily traffic context only; not a directional peak-window volume"
+      }
     },
     {
       "id": "C08",
@@ -232,7 +656,53 @@
           ]
         ]
       },
-      "note": "Screening grid derived from personal GPS history; road name and signal attribution require public geography matching."
+      "note": "Screening grid derived from personal GPS history. Signal labels, road names, TMS counts, and county count-station context are matched from supplied exports.",
+      "location_label": "SW 92nd Ave \u00b7 between SW 92 Av & SW 16 St and 4920 SW 92 Av & SW 12 St",
+      "road_match": {
+        "name": "SW 92nd Ave",
+        "mtfcc": "S1400",
+        "endpoint_matches": [
+          {
+            "name": "Unnamed road",
+            "mtfcc": "P0002",
+            "distance_m": 19
+          },
+          {
+            "name": "SW 92nd Ave",
+            "mtfcc": "S1400",
+            "distance_m": 5
+          }
+        ]
+      },
+      "nearby_signals": [
+        {
+          "intersection": "SW 92 Av & SW 16 St",
+          "distance_m": 100
+        },
+        {
+          "intersection": "4920 SW 92 Av & SW 12 St",
+          "distance_m": 385
+        },
+        {
+          "intersection": "SW 92 Av & SW 12 St",
+          "distance_m": 389
+        }
+      ],
+      "road_context": {
+        "signal_matches": 3,
+        "road_inventory_rows": 116397,
+        "major_road_name_count": 825,
+        "status": "TIGER line geometry matched at corridor endpoints"
+      },
+      "tms_context": {
+        "matched_sites": [],
+        "status": "no TMS count site matched to this road name"
+      },
+      "count_station_context": {
+        "matched_stations": [],
+        "status": "no nearby AADT station matched by road name",
+        "use": "annual average daily traffic context only; not a directional peak-window volume"
+      }
     },
     {
       "id": "C09",
@@ -260,7 +730,53 @@
           ]
         ]
       },
-      "note": "Screening grid derived from personal GPS history; road name and signal attribution require public geography matching."
+      "note": "Screening grid derived from personal GPS history. Signal labels, road names, TMS counts, and county count-station context are matched from supplied exports.",
+      "location_label": "SW 12th St \u00b7 between SW 82 Av & SW 8 St and SW 82 Av & SW 16 St",
+      "road_match": {
+        "name": "SW 12th St",
+        "mtfcc": "S1400",
+        "endpoint_matches": [
+          {
+            "name": "SW 12th St",
+            "mtfcc": "S1400",
+            "distance_m": 23
+          },
+          {
+            "name": "SW 12th St",
+            "mtfcc": "S1400",
+            "distance_m": 19
+          }
+        ]
+      },
+      "nearby_signals": [
+        {
+          "intersection": "SW 82 Av & SW 8 St",
+          "distance_m": 366
+        },
+        {
+          "intersection": "SW 82 Av & SW 16 St",
+          "distance_m": 438
+        },
+        {
+          "intersection": "SW 16 St @ SW 8200 Blk",
+          "distance_m": 447
+        }
+      ],
+      "road_context": {
+        "signal_matches": 4,
+        "road_inventory_rows": 116397,
+        "major_road_name_count": 825,
+        "status": "TIGER line geometry matched at corridor endpoints"
+      },
+      "tms_context": {
+        "matched_sites": [],
+        "status": "no TMS count site matched to this road name"
+      },
+      "count_station_context": {
+        "matched_stations": [],
+        "status": "no nearby AADT station matched by road name",
+        "use": "annual average daily traffic context only; not a directional peak-window volume"
+      }
     },
     {
       "id": "C10",
@@ -288,7 +804,53 @@
           ]
         ]
       },
-      "note": "Screening grid derived from personal GPS history; road name and signal attribution require public geography matching."
+      "note": "Screening grid derived from personal GPS history. Signal labels, road names, TMS counts, and county count-station context are matched from supplied exports.",
+      "location_label": "Between SW 92 Av & SW 8 St and SW 8 St & SW 89 Av",
+      "road_match": {
+        "name": null,
+        "mtfcc": null,
+        "endpoint_matches": [
+          {
+            "name": "Unnamed road",
+            "mtfcc": "P0002",
+            "distance_m": 5
+          },
+          {
+            "name": "Unnamed road",
+            "mtfcc": "P0002",
+            "distance_m": 7
+          }
+        ]
+      },
+      "nearby_signals": [
+        {
+          "intersection": "SW 92 Av & SW 8 St",
+          "distance_m": 118
+        },
+        {
+          "intersection": "SW 8 St & SW 89 Av",
+          "distance_m": 284
+        },
+        {
+          "intersection": "SW  92 Av @ SW 400 Blk",
+          "distance_m": 367
+        }
+      ],
+      "road_context": {
+        "signal_matches": 3,
+        "road_inventory_rows": 116397,
+        "major_road_name_count": 825,
+        "status": "TIGER line geometry matched at corridor endpoints"
+      },
+      "tms_context": {
+        "matched_sites": [],
+        "status": "no TMS count site matched to this road name"
+      },
+      "count_station_context": {
+        "matched_stations": [],
+        "status": "no nearby AADT station matched by road name",
+        "use": "annual average daily traffic context only; not a directional peak-window volume"
+      }
     },
     {
       "id": "C11",
@@ -316,7 +878,53 @@
           ]
         ]
       },
-      "note": "Screening grid derived from personal GPS history; road name and signal attribution require public geography matching."
+      "note": "Screening grid derived from personal GPS history. Signal labels, road names, TMS counts, and county count-station context are matched from supplied exports.",
+      "location_label": "SW 77th Ave \u00b7 between SW 77 Av & SW 98 St and S Dade Bswy & SW 98 St",
+      "road_match": {
+        "name": "SW 77th Ave",
+        "mtfcc": "S1400",
+        "endpoint_matches": [
+          {
+            "name": "SW 77th Ave",
+            "mtfcc": "S1400",
+            "distance_m": 16
+          },
+          {
+            "name": "SW 77th Ave",
+            "mtfcc": "S1400",
+            "distance_m": 11
+          }
+        ]
+      },
+      "nearby_signals": [
+        {
+          "intersection": "SW 77 Av & SW 98 St",
+          "distance_m": 389
+        },
+        {
+          "intersection": "S Dade Bswy & SW 98 St",
+          "distance_m": 407
+        },
+        {
+          "intersection": "US-1 & SW 98 St",
+          "distance_m": 434
+        }
+      ],
+      "road_context": {
+        "signal_matches": 3,
+        "road_inventory_rows": 116397,
+        "major_road_name_count": 825,
+        "status": "TIGER line geometry matched at corridor endpoints"
+      },
+      "tms_context": {
+        "matched_sites": [],
+        "status": "no TMS count site matched to this road name"
+      },
+      "count_station_context": {
+        "matched_stations": [],
+        "status": "no nearby AADT station matched by road name",
+        "use": "annual average daily traffic context only; not a directional peak-window volume"
+      }
     },
     {
       "id": "C12",
@@ -344,7 +952,53 @@
           ]
         ]
       },
-      "note": "Screening grid derived from personal GPS history; road name and signal attribution require public geography matching."
+      "note": "Screening grid derived from personal GPS history. Signal labels, road names, TMS counts, and county count-station context are matched from supplied exports.",
+      "location_label": "Between SW 75 Av @ SW 2500 Blk and SW 75 Av @ SW 2400 Blk",
+      "road_match": {
+        "name": null,
+        "mtfcc": null,
+        "endpoint_matches": [
+          {
+            "name": "Unnamed road",
+            "mtfcc": "P0002",
+            "distance_m": 10
+          },
+          {
+            "name": "Unnamed road",
+            "mtfcc": "S1630",
+            "distance_m": 8
+          }
+        ]
+      },
+      "nearby_signals": [
+        {
+          "intersection": "SW 75 Av @ SW 2500 Blk",
+          "distance_m": 91
+        },
+        {
+          "intersection": "SW 75 Av @ SW 2400 Blk",
+          "distance_m": 102
+        },
+        {
+          "intersection": "Coral Way & SR 826 NB",
+          "distance_m": 127
+        }
+      ],
+      "road_context": {
+        "signal_matches": 3,
+        "road_inventory_rows": 116397,
+        "major_road_name_count": 825,
+        "status": "TIGER line geometry matched at corridor endpoints"
+      },
+      "tms_context": {
+        "matched_sites": [],
+        "status": "no TMS count site matched to this road name"
+      },
+      "count_station_context": {
+        "matched_stations": [],
+        "status": "no nearby AADT station matched by road name",
+        "use": "annual average daily traffic context only; not a directional peak-window volume"
+      }
     }
   ],
   "traversals": [
@@ -701,12 +1355,27 @@
     "analysis_period": {
       "start": "2026-09-04T18:54:21+00:00",
       "end": "2026-10-04T18:47:08+00:00"
+    },
+    "gis_context": {
+      "street_network_rows": 116397,
+      "speed_limit_rows": 116397,
+      "speed_limit_median": 30.0,
+      "major_road_names": 825,
+      "tiger_edges": 144293,
+      "tiger_geometry": "TIGER/Line 2023 Miami-Dade",
+      "count_station_rows": 424,
+      "count_station_aadt_rows": 284,
+      "tms_rows": 184057,
+      "tms_miami_rows": 8107,
+      "tms_sites": 26,
+      "signals_loaded": 6037
     }
   },
   "limitations": [
     "Corridors are discovered from repeated spatial cells, not yet matched to public road names.",
     "The source is one driver\u2019s history and is not a vehicle count.",
     "Observed peak\u2013midday differences are descriptive and are not proven removable delay.",
+    "AADT station values are 2019 annual averages and are context only; they are not directional peak-window volumes.",
     "No signal phases, queues, or annual BCR are inferred."
   ]
 }

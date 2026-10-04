@@ -1,0 +1,22 @@
+# Private source exports and local GIS downloads
+Timeline.json
+*.gdb
+*.shp
+*.dbf
+*.shx
+*.prj
+*.xml
+Traffic_*.csv
+MDCTrafficCountStation*.csv
+StreetNetwork*.csv
+MajorRoads*.csv
+
+# Local build artifacts
+work/__pycache__/
+outputs/*.tar.gz
+outputs/*.zip
+outputs/miami-explorer-cloudflare.zip
+
+# Editor and OS files
+.DS_Store
+Thumbs.db

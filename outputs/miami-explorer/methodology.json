@@ -14,6 +14,7 @@
     "Corridors are discovered from repeated spatial cells, not yet matched to public road names.",
     "The source is one driver\u2019s history and is not a vehicle count.",
     "Observed peak\u2013midday differences are descriptive and are not proven removable delay.",
+    "AADT station values are 2019 annual averages and are context only; they are not directional peak-window volumes.",
     "No signal phases, queues, or annual BCR are inferred."
   ]
 }

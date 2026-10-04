@@ -1,6 +1,6 @@
 {
-  "schema_version": "1.0",
-  "methodology_version": "screening-grid-v1",
+  "schema_version": "1.2",
+  "methodology_version": "screening-grid-signal-tms-aadt-context-v3",
   "title": "Miami Arterial Evidence Explorer",
   "scope": "Sampled GPS history only; not countywide traffic measurement.",
   "audit": {
@@ -19,6 +19,20 @@
     "analysis_period": {
       "start": "2026-09-04T18:54:21+00:00",
       "end": "2026-10-04T18:47:08+00:00"
+    },
+    "gis_context": {
+      "street_network_rows": 116397,
+      "speed_limit_rows": 116397,
+      "speed_limit_median": 30.0,
+      "major_road_names": 825,
+      "tiger_edges": 144293,
+      "tiger_geometry": "TIGER/Line 2023 Miami-Dade",
+      "count_station_rows": 424,
+      "count_station_aadt_rows": 284,
+      "tms_rows": 184057,
+      "tms_miami_rows": 8107,
+      "tms_sites": 26,
+      "signals_loaded": 6037
     }
   },
   "source_vintages": {
@@ -26,7 +40,9 @@
       "start": "2026-09-04T18:54:21+00:00",
       "end": "2026-10-04T18:47:08+00:00"
     },
-    "road_geometry": "not bundled in this run",
-    "signals": "not bundled in this run"
+    "signals": "TrafficSignals CSV supplied by user",
+    "street_network": "StreetNetwork CSV supplied by user",
+    "major_roads": "MajorRoads CSV supplied by user",
+    "count_stations": "MDCTrafficCountStation CSV; AADT2019 field"
   }
 }

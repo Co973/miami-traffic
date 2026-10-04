@@ -14,5 +14,19 @@
   "analysis_period": {
     "start": "2026-09-04T18:54:21+00:00",
     "end": "2026-10-04T18:47:08+00:00"
+  },
+  "gis_context": {
+    "street_network_rows": 116397,
+    "speed_limit_rows": 116397,
+    "speed_limit_median": 30.0,
+    "major_road_names": 825,
+    "tiger_edges": 144293,
+    "tiger_geometry": "TIGER/Line 2023 Miami-Dade",
+    "count_station_rows": 424,
+    "count_station_aadt_rows": 284,
+    "tms_rows": 184057,
+    "tms_miami_rows": 8107,
+    "tms_sites": 26,
+    "signals_loaded": 6037
   }
 }
