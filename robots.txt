@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://co973.github.io/miami-traffic/sitemap.xml
