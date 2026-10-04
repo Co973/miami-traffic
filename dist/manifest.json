@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0",
+  "methodology_version": "screening-grid-v1",
+  "title": "Miami Arterial Evidence Explorer",
+  "scope": "Sampled GPS history only; not countywide traffic measurement.",
+  "audit": {
+    "input_sha256": "9ae61afaecb98f8c91060be09e6a7fc1d5615ec51645f968ff988e181f3b8a5d",
+    "semantic_segments": 1098,
+    "raw_signals": 66834,
+    "positions": 14485,
+    "vehicle_activities": 176,
+    "qualified_runs": 42,
+    "candidate_corridors": 40,
+    "published_corridors": 12,
+    "rejections": {
+      "too_few_positions": 123,
+      "low_activity_confidence": 11
+    },
+    "analysis_period": {
+      "start": "2026-09-04T18:54:21+00:00",
+      "end": "2026-10-04T18:47:08+00:00"
+    }
+  },
+  "source_vintages": {
+    "timeline_export": {
+      "start": "2026-09-04T18:54:21+00:00",
+      "end": "2026-10-04T18:47:08+00:00"
+    },
+    "road_geometry": "not bundled in this run",
+    "signals": "not bundled in this run"
+  }
+}
