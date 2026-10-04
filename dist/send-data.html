@@ -27,6 +27,15 @@
         <div class="privacy-item"><strong>Coarsened:</strong><br>Coordinates are rounded to about 100 metres and times to 15-minute buckets.</div>
         <div class="privacy-item"><strong>Excluded:</strong><br>The first and last points of each usable run are removed to reduce endpoint exposure.</div>
       </div>
+      <div class="source-links">
+        <div class="kicker">GETTING YOUR DATA</div>
+        <h2>Official export guides</h2>
+        <ul>
+          <li><a href="https://support.google.com/maps/answer/14169818" target="_blank" rel="noreferrer">Google Maps Timeline export</a> — the best match for this tool; export your Timeline JSON from the Maps app.</li>
+          <li><a href="https://support.apple.com/guide/iphone/iph10d7bdf26/ios" target="_blank" rel="noreferrer">Apple Maps and Location Services</a> — Apple provides Significant Locations &amp; Routes and Visited Places, but not the same direct Timeline JSON export.</li>
+          <li><a href="https://support.strava.com/hc/en-us/articles/216918437-Exporting-your-Data-and-Bulk-Export" target="_blank" rel="noreferrer">Strava activity export</a> — export GPS activities as GPX, TCX, or the original activity file.</li>
+        </ul>
+      </div>
       <label class="consent"><input id="consent" type="checkbox"> <span>I understand this creates a reduced location file for voluntary research sharing. I will review the downloaded file before sending it.</span></label>
       <div class="file-row"><input id="timeline" type="file" accept="application/json,.json"><button id="prepare" class="primary" disabled>Prepare data for sending</button><button id="upload" class="secondary" disabled>Upload prepared data</button></div>
       <div id="result" class="prepare-result" hidden></div>

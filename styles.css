@@ -7,3 +7,4 @@
 
 .scenario-baseline{margin:8px 0 12px}.scenario-note{font-size:10px;line-height:1.35;color:var(--muted);margin:9px 0 0}
 .secondary{border:1px solid var(--line);border-radius:7px;background:#fff;color:var(--blue);padding:9px 14px;font-weight:750;cursor:pointer}.secondary:disabled{opacity:.45;cursor:not-allowed}
+.source-links{border-top:1px solid var(--line);margin-top:22px;padding-top:20px}.source-links h2{margin-top:6px}.source-links ul{padding-left:20px;margin-bottom:0;color:var(--muted);line-height:1.7;font-size:13px}.source-links a{color:var(--blue);font-weight:700}
