@@ -80,3 +80,4 @@ uploadButton.addEventListener('click', () => {
   window.location.href = `mailto:surren83@gmail.com?subject=${subject}&body=${body}`;
   result.hidden = false; result.textContent = 'The prepared file was downloaded and an email draft was opened. Attach the file before sending.';
 });
+
