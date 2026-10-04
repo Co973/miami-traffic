@@ -28,11 +28,12 @@
         <div class="privacy-item"><strong>Excluded:</strong><br>The first and last points of each usable run are removed to reduce endpoint exposure.</div>
       </div>
       <label class="consent"><input id="consent" type="checkbox"> <span>I understand this creates a reduced location file for voluntary research sharing. I will review the downloaded file before sending it.</span></label>
-      <div class="file-row"><input id="timeline" type="file" accept="application/json,.json"><button id="prepare" class="primary" disabled>Prepare data for sending</button></div>
+      <div class="file-row"><input id="timeline" type="file" accept="application/json,.json"><button id="prepare" class="primary" disabled>Prepare data for sending</button><button id="upload" class="secondary" disabled>Upload prepared data</button></div>
       <div id="result" class="prepare-result" hidden></div>
-      <p class="small">There is no automatic upload endpoint in this version. This deliberate pause lets the project publish its filtering rules before collecting community data.</p>
+      <p class="small">Only the prepared file can be uploaded. The raw Timeline file stays in this browser. Uploading sends the prepared JSON to the project’s private intake endpoint for automated validation and storage.</p>
     </section>
   </main>
+  <script src="config.js"></script>
   <script src="prepare.js"></script>
 </body>
 </html>

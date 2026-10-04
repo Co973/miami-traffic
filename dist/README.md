@@ -14,6 +14,8 @@ The root contains only the sanitized static dataset and site assets. The private
 
 The **Send us your data** page is a transparency-first local preparation tool. It never uploads a raw Timeline export. A participant can review the privacy-reduced file before choosing whether to share it through a future intake process.
 
+The automatic-upload contract is in `worker/`. GitHub Pages is the public front end; the optional private Cloudflare Worker and D1 database receive only the prepared schema. Set the deployed Worker URL in `config.js` before enabling collection.
+
 ## Local rebuild
 
 The analysis script is in `work/build_explorer.py`. It expects the source exports at the local paths used during analysis and writes the sanitized bundle to `outputs/miami-explorer/`. To refresh the static site locally:

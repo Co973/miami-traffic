@@ -2,8 +2,10 @@ const $ = (s) => document.querySelector(s);
 const consent = $('#consent');
 const fileInput = $('#timeline');
 const button = $('#prepare');
+const uploadButton = $('#upload');
 const result = $('#result');
-const prepareState = { file: null };
+const prepareState = { file: null, prepared: null };
+const UPLOAD_ENDPOINT = window.COMMUNITY_UPLOAD_ENDPOINT || '';
 consent.addEventListener('change', () => { button.disabled = !(consent.checked && prepareState.file); });
 fileInput.addEventListener('change', () => { prepareState.file = fileInput.files?.[0] || null; button.disabled = !(consent.checked && prepareState.file); });
 
@@ -62,9 +64,17 @@ button.addEventListener('click', async () => {
       return { run: `R${String(i + 1).padStart(4, '0')}`, date: local.date, window: local.window, time_bucket: local.bucket, duration_seconds: Math.round(end.ts - start.ts), observation_count: trimmed.length, points: trimmed.map(p => ({ time_bucket: new Date(roundedTime(p.ts) * 1000).toISOString(), lat: roundCoord(p.lat), lon: roundCoord(p.lon) })) };
     }).filter(Boolean);
     const output = { schema_version: 'community-prepared-v1', created_at: new Date().toISOString(), privacy: { coordinate_precision: '0.001 degrees', time_precision: '15 minutes', endpoints_trimmed: true, raw_records_excluded: true }, runs: safeRuns };
-    const blob = new Blob([JSON.stringify(output, null, 2)], { type: 'application/json' });
+    prepareState.prepared = JSON.stringify(output); uploadButton.disabled = false;
+    const blob = new Blob([prepareState.prepared], { type: 'application/json' });
     const link = document.createElement('a'); link.href = URL.createObjectURL(blob); link.download = 'miami-community-trip-data-prepared.json'; link.click(); URL.revokeObjectURL(link.href);
     result.textContent = `Prepared ${safeRuns.length} privacy-reduced vehicle runs. Review the downloaded file before sharing it. Raw Timeline records never left this browser.`;
   } catch (error) { result.textContent = `The file could not be prepared: ${error.message}`; }
   button.disabled = !(consent.checked && prepareState.file);
 });
+
+uploadButton.addEventListener('click', async () => {
+  if (!UPLOAD_ENDPOINT || !prepareState.prepared) { result.hidden = false; result.textContent = 'The upload endpoint is not configured yet. You can still download and review the prepared file.'; return; }
+  uploadButton.disabled = true; result.hidden = false; result.textContent = 'Uploading the prepared file…';
+  try { const response = await fetch(UPLOAD_ENDPOINT, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: prepareState.prepared }); if (!response.ok) throw new Error(`Server returned ${response.status}`); result.textContent = 'Uploaded successfully. The raw Timeline file was never sent.'; } catch (error) { result.textContent = `Upload failed: ${error.message}. Your prepared file is still available locally.`; } finally { uploadButton.disabled = !prepareState.prepared; }
+});
+
