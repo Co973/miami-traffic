@@ -3,14 +3,14 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Miami Arterial Evidence Explorer</title>
+  <title>Traffic Bottlenecks</title>
   <meta name="description" content="A transparent, sample-based review of recurring Miami-Dade travel-time patterns." />
   <link rel="canonical" href="https://co973.github.io/miami-traffic/" />
-  <meta property="og:title" content="Miami Arterial Evidence Explorer" />
+  <meta property="og:title" content="Traffic Bottlenecks" />
   <meta property="og:description" content="A transparent, sample-based review of recurring Miami-Dade travel-time patterns." />
   <meta property="og:url" content="https://co973.github.io/miami-traffic/" />
   <meta property="og:type" content="website" />
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Miami Arterial Evidence Explorer","url":"https://co973.github.io/miami-traffic/","description":"A transparent, sample-based review of recurring Miami-Dade travel-time patterns."}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Traffic Bottlenecks","url":"https://co973.github.io/miami-traffic/","description":"A transparent, sample-based review of recurring Miami-Dade travel-time patterns."}</script>
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2311262f'/%3E%3Cpath d='M7 23 15 8l3 7 7-3-5 11-8-5z' fill='%237ce0c3'/%3E%3C/svg%3E" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <link rel="stylesheet" href="styles.css" />
@@ -20,13 +20,9 @@
     <header class="topbar">
       <div>
         <div class="eyebrow">MIAMI-DADE / MOBILITY EVIDENCE</div>
-        <h1>Arterial Evidence Explorer</h1>
-        <p class="lede">A transparent review of repeated travel-time patterns in one sampled driving history.</p>
+        <h1>Traffic Bottlenecks</h1>
       </div>
-      <div class="header-meta"><span class="status-dot"></span><span id="period">Loading evidence…</span></div>
     </header>
-
-    <section class="notice"><strong>Read this as a screening tool.</strong> It uses one driver’s GPS history. It can point staff toward locations worth investigating; it cannot measure countywide congestion, traffic volume, signal performance, or all drivers’ experience.</section>
 
     <section class="stats" id="stats"></section>
 
@@ -46,11 +42,12 @@
       <div class="empty"><div class="kicker">SELECT A CORRIDOR</div><h2>Choose a row to inspect the evidence</h2><p>Measurements, sample dates, quality flags, and hypothetical savings will appear here.</p></div>
     </section>
 
-    <footer><span>Methodology v1 · local processing · no raw locations published</span><button id="download">Download current summary</button><a href="send-data.html">Send us your data</a><a href="methodology.json">Methods JSON</a></footer>
+    <footer><button id="download">Download current summary</button><a href="send-data.html">Send us your data</a><a href="methodology.json">Methods JSON</a></footer>
   </main>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
+
 
 
